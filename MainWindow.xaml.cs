@@ -33,7 +33,7 @@ namespace TextSwapperArEn
         {
             IsArToEn = !IsArToEn;
             this.Button.Content = IsArToEn? "Ar→En" : "En→Ar";
-            Swapper();
+            Swapper(true);
         }
 
         private void TextBoxBase_OnTextChanged(object sender, TextChangedEventArgs e)
@@ -42,9 +42,11 @@ namespace TextSwapperArEn
         }
 
 
-        public void Swapper()
+        public void Swapper(bool IsFlip=false)
         {
+           
             string text = Box.Text;
+            Flip(IsFlip);
             if (IsArToEn)
             {
                 TextBox.Text = text.LayoutArToEn();
@@ -53,6 +55,10 @@ namespace TextSwapperArEn
             {
                 TextBox.Text = text.LayoutEnToAr();
             }
+
+
+            void Flip(bool flip){ if (flip) Box.Text = TextBox.Text;}
+
         }
 
 
