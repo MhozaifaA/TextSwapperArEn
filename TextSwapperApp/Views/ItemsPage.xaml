@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TextSwapperApp.Views.ItemsPage"
+             Title="الخاروف حزو" FlowDirection="RightToLeft"
+             xmlns:local="clr-namespace:TextSwapperApp.ViewModels"  
+             xmlns:model="clr-namespace:TextSwapperApp.Models"  
+             x:Name="BrowseItemsPage">
+
+    <Grid>
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Large">تقدمة الخواريف</Label>
+    </Grid>
+ 
+</ContentPage>

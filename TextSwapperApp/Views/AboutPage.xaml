@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TextSwapperApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:TextSwapperApp.ViewModels"
+             Title="TextSwapper">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <ScrollView >
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Button x:Name="Button" Margin="0,10,0,0" Text="En→Ar" Clicked="Button_Click"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+
+                <Editor x:Name="Box" Placeholder="from" TextChanged="TextBoxBase_OnTextChanged"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+
+
+                <Editor x:Name="TextBox" Placeholder="to"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+
+
+            </StackLayout>
+           
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
