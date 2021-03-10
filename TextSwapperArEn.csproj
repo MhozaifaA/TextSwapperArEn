@@ -155,6 +155,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="AppFile .exe.apk\TextSwapperArEn.exe.config" />
+    <None Include="AppFile .exe.apk\TextSwpper.apk" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -1402,6 +1404,8 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="TextSwapperApp.Android\Assets\AboutAssets.txt" />
+    <Content Include="AppFile .exe.apk\TextSwapperArEn.exe" />
+    <Content Include="AppFile .exe.apk\TextSwapperArEn.pdb" />
     <Content Include="TextSwapperApp.Android\bin\Debug\TextSwapperApp.Android.dll" />
     <Content Include="TextSwapperApp.Android\bin\Debug\TextSwapperApp.Android.pdb" />
     <Content Include="TextSwapperApp.Android\bin\Debug\TextSwapperApp.dll" />
